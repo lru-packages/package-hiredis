@@ -90,5 +90,6 @@ package:
 		--rpm-changelog CHANGELOG.txt \
 		--rpm-dist el$(RHEL) \
 		--rpm-auto-add-directories \
-		usr/local/bin \
+		usr/local/include \
+		usr/local/lib \
 	;
