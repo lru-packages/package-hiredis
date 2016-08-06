@@ -60,7 +60,7 @@ compile:
 .PHONY: install-tmp
 install-tmp:
 	mkdir -p /tmp/installdir-$(NAME)-$(VERSION);
-	cd ./$(NAME)-$(VERSION) && \
+	cd ./$(NAME) && \
 		make install DESTDIR=/tmp/installdir-$(NAME)-$(VERSION);
 
 #-------------------------------------------------------------------------------
