@@ -11,7 +11,7 @@ RHEL=$(shell rpm -q --queryformat '%{VERSION}' centos-release)
 
 #-------------------------------------------------------------------------------
 
-all: info clean install-deps compile install-tmp package
+all: info clean install-deps compile install-tmp package move
 
 #-------------------------------------------------------------------------------
 
@@ -93,3 +93,9 @@ package:
 		usr/local/include \
 		usr/local/lib \
 	;
+
+#-------------------------------------------------------------------------------
+
+.PHONY: move
+move:
+	mv *.rpm /vagrant/repo
