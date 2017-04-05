@@ -1,6 +1,6 @@
 NAME=hiredis
 VERSION=0.13.3
-ITERATION=1
+ITERATION=1.lru
 PREFIX=/usr/local
 LICENSE=BSD
 VENDOR="Hiredis Core Team"
